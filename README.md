@@ -13,7 +13,7 @@
 
 ## Instructions
 
-![스크린샷 2024-07-22 140056](https://github.com/user-attachments/assets/eaf1a9d2-d90c-4a1e-a8d4-9b33ac9564cf)
+![Api_test](https://github.com/user-attachments/assets/e0354c22-a273-45de-8216-2d9fddf6db78)
 
 The project is divided into sections for solenoid operation test and API test. 
 Assemble the BOM as shown in the diagram below. Note that the diagram may show different components such as an SSR and a 12V PSU. 
@@ -45,3 +45,29 @@ Host [host name]
 If prompted, enter the password for the pi user.
 You should now be connected to your Raspberry Pi through VSCode.
 
+## sol_api_test Description
+
+sol_api_test is a code for testing the operation of the solenoid. This helps to verify if the wiring is correct. It includes a section to test API communication. After ensuring the interpreter is correct, sol_api_test runs in the Raspberry Pi environment, and client runs in an external environment to communicate.
+
+### Setup Instructions
+
+1. Set up and activate the virtual environment:
+   ```bash
+   python3 -m venv env
+   source env/bin/activate
+   ```
+Install the required packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+Run the API code:
+   ```bash   
+   python3 sol_api_test.py
+   ```
+
+Run client.py in the external environment:
+   ```bash
+   python3 client.py
+   ```
+After this, the solenoid will operate for 10 seconds.
