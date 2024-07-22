@@ -26,6 +26,7 @@ It is important to install a pull-down resistor in front of the solenoid.
 2. Execute the following command to enable SSH:
    ```bash
    sudo raspi-config
+   ```
 Navigate to Interfacing Options and select SSH.
 Choose Enable and exit the configuration tool.
 Connecting to Raspberry Pi 5 using VSCode
@@ -39,7 +40,8 @@ Host [host name]
     HostName [raspberry_pi_ip]
     User [pi_name]
     Port 22
-'''
+   ```
+
 If prompted, enter the password for the pi user.
 You should now be connected to your Raspberry Pi through VSCode.
 
