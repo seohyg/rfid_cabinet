@@ -47,13 +47,13 @@ You should now be connected to your Raspberry Pi through VSCode.
 
 ## sol_act_test Description
    ```plaintext
-sol_acy_test.py
+sol_act_test.py
    ```
 This is a code for testing the operation of the solenoid. This helps to verify if the wiring is correct
 
 ## sol_api_test Description
    ```plaintext
-requirments.txt
+requirements.txt
 sol_api_test.py
 client.py
    ```
