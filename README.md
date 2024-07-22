@@ -34,7 +34,7 @@ Open the command palette in VSCode (Ctrl+Shift+P or Cmd+Shift+P).
 Click Remote-SSH: Open SSH Configuration File...
 Add the following configuration to your SSH config file (~/.ssh/config):
 
-config
+   ```config
 
 Host [host name]
     HostName [raspberry_pi_ip]
