@@ -35,12 +35,10 @@ Click Remote-SSH: Open SSH Configuration File...
 Add the following configuration to your SSH config file (~/.ssh/config):
 
    ```config
-
 Host [host name]
     HostName [raspberry_pi_ip]
     User [pi_name]
     Port 22
-
 If prompted, enter the password for the pi user.
 You should now be connected to your Raspberry Pi through VSCode.
 
