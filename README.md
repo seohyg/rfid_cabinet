@@ -39,6 +39,7 @@ Host [host name]
     HostName [raspberry_pi_ip]
     User [pi_name]
     Port 22
+'''
 If prompted, enter the password for the pi user.
 You should now be connected to your Raspberry Pi through VSCode.
 
