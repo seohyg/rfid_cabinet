@@ -32,14 +32,14 @@ Connecting to Raspberry Pi 5 using VSCode
 Install the Remote - SSH extension in VSCode.
 Open the command palette in VSCode (Ctrl+Shift+P or Cmd+Shift+P).
 Click Remote-SSH: Open SSH Configuration File...
-Enter to your ssh config and add this
+Add the following configuration to your SSH config file (~/.ssh/config):
 
 config
-Host [host name]
-    HostName [rasberry_pi_ip]
-    User [pi_name]
-    port 22
 
+Host [host name]
+    HostName [raspberry_pi_ip]
+    User [pi_name]
+    Port 22
 
 If prompted, enter the password for the pi user.
 You should now be connected to your Raspberry Pi through VSCode.
